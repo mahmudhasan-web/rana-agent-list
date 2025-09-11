@@ -36,14 +36,14 @@ const TableBody = ({ admin, handleModal, handleReport }) => {
       </div>
 
       {/* ID Badge */}
-      <div className="col-span-1">
-        <span className="bg-yellow-400 text-black lg:w-8 w-6 h-[35px] lg:px-2 px-1 lg:py-1 rounded-md text-xs flex flex-col items-center justify-center ms-2">
-          <span>ID</span> <span>{admin?.userId}</span>
+      <div className="col-span-1  w-fit mx-auto">
+        <span className="bg-yellow-400 text-black w-fit h-[35px] lg:px-2 px-1 lg:py-1 rounded-md text-xs flex flex-col items-center justify-center ms-2">
+          <span>ID</span> <span className="font-semibold">{admin?.userId}</span>
         </span>
       </div>
 
       {/* Rating Stars */}
-      <div className="col-span-1 flex items-center">
+      <div className="col-span-1 flex items-center w-fit mx-auto">
         {[...Array(admin?.rating)].map((_, i) => (
           <svg
             key={i}
@@ -56,7 +56,7 @@ const TableBody = ({ admin, handleModal, handleReport }) => {
       </div>
 
       {/* WhatsApp Link */}
-      <div className="col-span-1">
+      <div className="col-span-1  w-fit mx-auto">
         <a
           href={`https://wa.me/${admin?.whatsappNo}`}
           target="_blank"
@@ -68,18 +68,18 @@ const TableBody = ({ admin, handleModal, handleReport }) => {
       </div>
 
       {/* Phone Number with WhatsApp Badge */}
-      <div className="col-span-2">
+      <div className="col-span-2  w-fit mx-auto">
         <div className="flex flex-col items-center">
           <span className="text-[10px] lg:text-[16px]">
             {admin?.phoneNumber}
           </span>
-          <p className="bg-green-600 text-white text-[7px] lg:text-xs px-1 py-0.5 rounded-full lg:w-1/2">
+          <p className="bg-green-600 text-white text-[7px] lg:text-xs px-1 py-0.5 rounded-full ">
             Whatsapp
           </p>
         </div>
       </div>
 
-      <div className="col-span-1">
+      <div className="col-span-1 ">
         <button
           onClick={() => handleModal(admin?.id)}
           className="p-2 hover:bg-gray-700 rounded-full transition-colors"
