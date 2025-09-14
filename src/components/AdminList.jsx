@@ -64,7 +64,7 @@ const AdminList = () => {
   return (
     <div className="flex flex-col items-center">
       <h1 className="text-center text-yellow-400 lg:text-xl text-[14px] lg:font-bold font-semibold lg:mb-8 mb-2">
-        BetXwin ONLINE ADMIN LIST
+        BetX365 ONLINE ADMIN LIST
       </h1>
       <div className="min-h-screen bg-[#1a1b1f] text-white lg:p-4 p-2 rounded-md w-full">
         <div className="max-w-7xl mx-auto">

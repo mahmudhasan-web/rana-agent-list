@@ -9,7 +9,7 @@ import {
   LogInIcon,
 } from "lucide-react";
 import Image from "next/image";
-import Logo from "@/assets/logo.jpg";
+import Logo from "@/assets/logo-betx365.webp";
 import AgentSearchModal from "./SearchAgent";
 import { useState } from "react";
 import { useRouter } from "next/navigation";

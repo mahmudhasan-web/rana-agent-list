@@ -66,7 +66,7 @@ const SubadminList = () => {
   return (
     <div className="flex flex-col items-center">
       <h1 className="text-center text-yellow-400 lg:text-xl text-[14px] lg:font-bold font-semibold lg:mb-8 mb-2">
-        BetXwin ONLINE Sub-Agent LIST
+        BetX365 ONLINE Sub-Agent LIST
       </h1>
       <div className="min-h-screen bg-[#1a1b1f] text-white lg:p-4 p-2 rounded-md w-full">
         <div className="max-w-7xl mx-auto">
@@ -79,7 +79,7 @@ const SubadminList = () => {
             <>
               {admins.length <= 0 ? (
                 <p className="text-center grid grid-cols-1 gap-2 items-center bg-[#22242c] lg:p-3 p-1 rounded-lg mb-2">
-                  No Admins Found
+                  No Sub Admins Found
                 </p>
               ) : (
                 admins?.map((admin) => (
