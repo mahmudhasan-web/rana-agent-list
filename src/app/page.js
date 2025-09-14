@@ -72,47 +72,49 @@ export default function Home() {
       <div className="flex lg:flex-row flex-col justify-evenly items-center py-2 shadow-md rounded-lg gap-4">
         <div className="w-full lg:px-10 p-3 lg:pt-6 lg:pb-16 bg-gray-800 shadow-md rounded-lg lg:gap-8 gap-4 flex flex-col items-center">
           <p className="text-yellow-400">কুইক মাস্টার এজেন্ট নম্বর</p>
-          {loading ? (
-            <p>Loading...</p>
-          ) : (
-            <div className="bg-[#1F2029] lg:px-6 lg:py-3 p-2 rounded-md flex justify-between lg:gap-4 w-full">
-              <div className="flex items-center gap-3">
-                <div className="bg-yellow-400 lg:p-2 p-1 rounded-full">
-                  <FaUserAlt className="text-black w-4 h-4 lg:w-6 lg:h-6" />
+          {
+            loading ? (
+              <p>Loading...</p>
+            ) :
+              user &&
+              <div className="bg-[#1F2029] lg:px-6 lg:py-3 p-2 rounded-md flex justify-between lg:gap-4 w-full">
+                <div className="flex items-center gap-3">
+                  <div className="bg-yellow-400 lg:p-2 p-1 rounded-full">
+                    <FaUserAlt className="text-black w-4 h-4 lg:w-6 lg:h-6" />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="lg:text-lg text-xs">{user?.fullname}</span>
+                    <span className="text-xs">{user?.role}</span>
+                  </div>
                 </div>
-                <div className="flex flex-col">
-                  <span className="lg:text-lg text-xs">{user?.fullname}</span>
-                  <span className="text-xs">{user?.role}</span>
+                <div className="flex items-center lg:gap-4 gap-2">
+                  <div className="bg-yellow-400 p-1 flex flex-col rounded-md text-black">
+                    <span className="text-xs font-bold">ID</span>
+                    <span className="text-xs font-bold">{user?.userId}</span>
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="lg:text-lg text-xs">{user?.whatsappNo}</span>
+                    <span className="text-xs bg-green-500 rounded-lg px-1 w-16">
+                      Whatsapp
+                    </span>
+                  </div>
+                </div>
+                <div className="flex flex-col gap-1 justify-center">
+                  <Link
+                    href={`https://wa.me/${user?.whatsappNo}`}
+                    className="bg-green-500 px-1 rounded-md text-xs lg:text-lg"
+                  >
+                    Message
+                  </Link>
+                  <button
+                    onClick={() => handleReport(user?.id)}
+                    className="bg-orange-600 px-1 rounded-md text-xs lg:text-lg"
+                  >
+                    Report
+                  </button>
                 </div>
               </div>
-              <div className="flex items-center lg:gap-4 gap-2">
-                <div className="bg-yellow-400 p-1 flex flex-col rounded-md text-black">
-                  <span className="text-xs font-bold">ID</span>
-                  <span className="text-xs font-bold">{user?.userId}</span>
-                </div>
-                <div className="flex flex-col">
-                  <span className="lg:text-lg text-xs">{user?.whatsappNo}</span>
-                  <span className="text-xs bg-green-500 rounded-lg px-1 w-16">
-                    Whatsapp
-                  </span>
-                </div>
-              </div>
-              <div className="flex flex-col gap-1 justify-center">
-                <Link
-                  href={`https://wa.me/${user?.whatsappNo}`}
-                  className="bg-green-500 px-1 rounded-md text-xs lg:text-lg"
-                >
-                  Message
-                </Link>
-                <button
-                  onClick={() => handleReport(user?.id)}
-                  className="bg-orange-600 px-1 rounded-md text-xs lg:text-lg"
-                >
-                  Report
-                </button>
-              </div>
-            </div>
-          )}
+          }
         </div>
 
         <div className="w-full lg:px-10 px-4 py-4 bg-gray-800 shadow-md rounded-lg gap-8 flex flex-col items-center">
