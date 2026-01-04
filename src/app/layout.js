@@ -1,11 +1,8 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-// import Image from "next/image";
 import Navigation from "@/components/Navigation";
 import Marquee from "react-fast-marquee";
-// import Logo from "@/assets/logo.jpg";
 import SearchButton from "@/components/SearchButton";
-// import SupportButton from "@/components/SupportButton";
 import Script from "next/script";
 
 const geistSans = Geist({

@@ -1,6 +1,5 @@
 "use client";
 import React, { useEffect, useState } from "react";
-import { FaWhatsapp } from "react-icons/fa";
 import UserDetailsModal from "./UserDetails";
 import api from "@/app/utils/api";
 import ReportModal from "./Report";
