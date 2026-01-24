@@ -3,7 +3,8 @@ import "./globals.css";
 import Navigation from "@/components/Navigation";
 import Marquee from "react-fast-marquee";
 import SearchButton from "@/components/SearchButton";
-import Script from "next/script";
+import { RiWhatsappFill } from "react-icons/ri";
+import Link from "next/link";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <Script
+      {/* <Script
           id="tawkto-script"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
@@ -40,9 +41,9 @@ export default function RootLayout({ children }) {
               })();
             `,
           }}
-        />
+        /> */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased lg:mx-[74px] mx-3 bg-[#1F2029]`}
+        className={`${geistSans.variable} ${geistMono.variable} relative antialiased lg:mx-[74px] mx-3 bg-[#1F2029]`}
       >
         <div className="min-h-screen text-white mb-12">
           <SearchButton />
@@ -60,6 +61,12 @@ export default function RootLayout({ children }) {
             </Marquee>
           </div>
           {children}
+        </div>
+        <div className="fixed bottom-0 right-0 mb-4 mr-4 z-10">
+          <Link href={`https://wa.me/+8801234567890`} target="_blank">
+            <RiWhatsappFill className="text-5xl text-green-600 md:ml-2 ml-3" />
+            <span className="text-white font-semibold">Whatsapp</span>
+          </Link>
         </div>
         {/* <SupportButton /> */}
       </body>
