@@ -251,9 +251,9 @@ export default function Home() {
             তার বুঝতে হলে আপনার নিম্বের তথ্য গুলো পড়া জরুরী।
           </div>
         </div>
-        <div className="bg-gray-800 rounded-lg w-full flex flex-col items-center gap-6 lg:p-8 p-4">
+        <div className="bg-gray-800 rounded-lg w-full flex flex-col items-center gap-6  lg:py-8 py-4 ">
           <p className="text-yellow-400">betbuzzz365 এর নতুন সব আপডেট</p>
-          <div className="rounded-lg text-white mx-4 w-full max-w-md">
+          <div className="rounded-lg text-white mx-4 w-full">
             <Swipers />
           </div>
         </div>

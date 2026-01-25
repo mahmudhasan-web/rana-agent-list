@@ -26,8 +26,8 @@ const Swipers = () => {
             src={src}
             alt={`slider-${index}`}
             width={550}
-            height={300}
-            className="rounded-lg lg:h-[210px]"
+            height={350}
+            className="rounded-lg lg:h-[450px] h-44"
           />
         </SwiperSlide>
       ))}
