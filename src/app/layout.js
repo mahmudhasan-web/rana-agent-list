@@ -18,8 +18,8 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: "Betbuzzz365 Master Admin List",
-  description: "betX365 Master Admin List",
-  icons
+  description: "Betbuzzz365 Master Admin List",
+  
 };
 
 
