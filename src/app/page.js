@@ -122,13 +122,13 @@ export default function Home() {
           <div className="bg-[#1F2029] lg:px-6 px-2 py-3 rounded-md flex flex-col justify-between gap-4 w-full overflow-y-auto h-[130px] lg:h-[140px]">
             <div className="flex flex-row w-full items-center lg:gap-4 gap-2 justify-between lg:text-lg text-xs">
               <span className="text-yellow-400">Main Link</span>
-              <p className="text-white">https://www.btx365.live</p>
+              <p className="text-white">https://betbuzzz365.com</p>
               <div className="flex items-center justify-center">
                 <GoDotFill className="text-green-400" />
                 <p className="text-green-400">Active</p>
               </div>
               <Link
-                href={"https://www.btx365.live"}
+                href={"https://betbuzzz365.com"}
                 className="bg-yellow-400 rounded-md px-2 text-black"
               >
                 Visit
@@ -244,7 +244,7 @@ export default function Home() {
         <div className="bg-gray-800 rounded-lg w-full flex flex-col items-center gap-6 lg:p-8 p-4">
           <p className="text-yellow-400">কিভাবে একাউন্ট খুলবেনঃ</p>
           <div className="bg-[#1F2029] lg:p-6 rounded-lg text-white lg:mx-4 p-2 lg:text-[16px] text-[14px]">
-            https://www.btx365.live তে একাউন্ট করতে হলে আপনার এজেন্ট এর মাধ্যমে একাউন্ট
+            https://betbuzzz365.com তে একাউন্ট করতে হলে আপনার এজেন্ট এর মাধ্যমে একাউন্ট
             খুলতে হবে। এজেন্ট এর মাধ্যমেই টাকা ডিপোজিট এবং উইথড্র করতে হবে। আপনি
             যে এজেন্ট এর কাছ থেকে একাউন্ট খুলবেন তার সাথেই সব সময় লেনদেন করতে
             হবে। ঠিক কোন এজেন্ট কে টাকা দিবেন এবং কিভাবে তার সাথে লেনদেন করবেন
@@ -252,7 +252,7 @@ export default function Home() {
           </div>
         </div>
         <div className="bg-gray-800 rounded-lg w-full flex flex-col items-center gap-6 lg:p-8 p-4">
-          <p className="text-yellow-400">betXwin এর নতুন সব আপডেট</p>
+          <p className="text-yellow-400">betbuzzz365 এর নতুন সব আপডেট</p>
           <div className="rounded-lg text-white mx-4 w-full max-w-md">
             <Swipers />
           </div>

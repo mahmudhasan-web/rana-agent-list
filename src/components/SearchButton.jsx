@@ -5,7 +5,7 @@ import { FaSearch } from "react-icons/fa";
 import { HiMiniSquares2X2 } from "react-icons/hi2";
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
-import Logo from "@/assets/logo-betx365.webp";
+import Logo from "@/assets/logo-new.png";
 import Image from "next/image";
 
 const SearchButton = () => {
@@ -24,7 +24,7 @@ const SearchButton = () => {
           width={300}
           height={300}
           alt="logo"
-          className="rounded-lg w-[300px] h-[70px]"
+          className="rounded-lg w-[300px] h-[40px]"
         />
         <HiMiniSquares2X2
           onClick={() => setIsMenuOpen(true)}
