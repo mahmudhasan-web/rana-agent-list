@@ -5,7 +5,7 @@ import { FaSearch } from "react-icons/fa";
 import { HiMiniSquares2X2 } from "react-icons/hi2";
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
-import Logo from "@/assets/logo-new.png";
+import Logo from "@/assets/logo.2f387ec31c0cc62a1664e3439eb23b2d.svg";
 import Image from "next/image";
 
 const SearchButton = () => {

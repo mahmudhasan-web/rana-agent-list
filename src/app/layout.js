@@ -5,6 +5,8 @@ import Marquee from "react-fast-marquee";
 import SearchButton from "@/components/SearchButton";
 import { RiWhatsappFill } from "react-icons/ri";
 import Link from "next/link";
+import logo from "@/assets/logo.2f387ec31c0cc62a1664e3439eb23b2d.svg"
+import { icons } from "lucide-react";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,8 +19,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Betbuzzz365 Master Admin List",
-  description: "Betbuzzz365 Master Admin List",
+  title: "lcx247 Master Admin List",
+  description: "lcx247 Master Admin List",
+  icons: {
+    icon: logo.src,
+  }
   
 };
 

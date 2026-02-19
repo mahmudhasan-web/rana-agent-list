@@ -87,10 +87,10 @@ export default function Home() {
                     <span className="text-xs">{user?.role}</span>
                   </div>
                 </div>
-                <div className="flex items-center lg:gap-4 gap-2">
-                  <div className="bg-yellow-400 p-1 flex flex-col rounded-md text-black">
-                    <span className="text-xs font-bold">ID</span>
-                    <span className="text-xs font-bold">{user?.userId}</span>
+                <div className="flex items-center lg:gap-4 gap-2 ">
+                  <div className="bg-yellow-400 w-8 text-center p-1 flex flex-col rounded-md text-black">
+                    <p className="text-xs font-bold">ID</p>
+                    <p className="text-xs font-bold">{user?.userId}</p>
                   </div>
                   <div className="flex flex-col">
                     <span className="lg:text-lg text-xs">{user?.whatsappNo}</span>
@@ -122,13 +122,13 @@ export default function Home() {
           <div className="bg-[#1F2029] lg:px-6 px-2 py-3 rounded-md flex flex-col justify-between gap-4 w-full overflow-y-auto h-[130px] lg:h-[140px]">
             <div className="flex flex-row w-full items-center lg:gap-4 gap-2 justify-between lg:text-lg text-xs">
               <span className="text-yellow-400">Main Link</span>
-              <p className="text-white">https://betbuzzz365.com</p>
+              <p className="text-white">https://lcx247.live</p>
               <div className="flex items-center justify-center">
                 <GoDotFill className="text-green-400" />
                 <p className="text-green-400">Active</p>
               </div>
               <Link
-                href={"https://betbuzzz365.com"}
+                href={"https://lcx247.live"}
                 className="bg-yellow-400 rounded-md px-2 text-black"
               >
                 Visit
@@ -241,27 +241,22 @@ export default function Home() {
       </div>
 
       <div className="flex lg:flex-row flex-col gap-4">
-        <div className="bg-gray-800 rounded-lg w-full flex flex-col items-center gap-6 lg:p-8 p-4">
+        <div className="bg-gray-800 rounded-lg flex flex-col items-center gap-6 lg:p-8 p-4 w-full lg:w-1/2">
           <p className="text-yellow-400">কিভাবে একাউন্ট খুলবেনঃ</p>
           <div className="bg-[#1F2029] lg:p-6 rounded-lg text-white lg:mx-4 p-2 lg:text-[16px] text-[14px]">
-            https://betbuzzz365.com তে একাউন্ট করতে হলে আপনার এজেন্ট এর মাধ্যমে একাউন্ট
+            https://lcx247.live তে একাউন্ট করতে হলে আপনার এজেন্ট এর মাধ্যমে একাউন্ট
             খুলতে হবে। এজেন্ট এর মাধ্যমেই টাকা ডিপোজিট এবং উইথড্র করতে হবে। আপনি
             যে এজেন্ট এর কাছ থেকে একাউন্ট খুলবেন তার সাথেই সব সময় লেনদেন করতে
             হবে। ঠিক কোন এজেন্ট কে টাকা দিবেন এবং কিভাবে তার সাথে লেনদেন করবেন
             তার বুঝতে হলে আপনার নিম্বের তথ্য গুলো পড়া জরুরী।
           </div>
         </div>
-        <div className="bg-gray-800 rounded-lg w-full flex flex-col items-center gap-6  lg:py-8 py-4 ">
-          <p className="text-yellow-400">betbuzzz365 এর নতুন সব আপডেট</p>
-          <div className="rounded-lg text-white mx-4 w-full">
+        <div className="bg-gray-800 rounded-lg gap-6 lg:py-8 py-4 space-y-3 w-full lg:w-1/2">
+          <p className="text-yellow-400 text-center">lcx247.live এর নতুন সব আপডেট</p>
+          <div className="rounded-lg text-white mx-4">
             <Swipers />
           </div>
         </div>
-        <ReportModal
-          userId={selectedUserId}
-          isOpen={reportModal}
-          onClose={() => setReportModal(false)}
-        />
       </div>
     </div>
   );

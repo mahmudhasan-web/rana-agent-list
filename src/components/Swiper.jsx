@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
-import Slider2 from "@/assets/slider2.jpg";
-import Slider3 from "@/assets/slider3.png";
+import Slider2 from "@/assets/IMG-20260130-WA0010.jpg";
+import Slider3 from "@/assets/IMG-20260130-WA0011.jpg";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Autoplay, Pagination } from "swiper/modules";
 import "swiper/css";
@@ -27,7 +27,7 @@ const Swipers = () => {
             alt={`slider-${index}`}
             width={550}
             height={350}
-            className="rounded-lg lg:h-[450px] h-44"
+            className="rounded-lg w-fit h-60 mx-auto "
           />
         </SwiperSlide>
       ))}
