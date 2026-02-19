@@ -27,7 +27,7 @@ const Swipers = () => {
             alt={`slider-${index}`}
             width={550}
             height={350}
-            className="rounded-lg w-fit h-60 mx-auto "
+            className="rounded-lg w-fit md:h-60 h-44 mx-auto "
           />
         </SwiperSlide>
       ))}

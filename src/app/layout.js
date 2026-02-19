@@ -68,7 +68,7 @@ export default function RootLayout({ children }) {
           {children}
         </div>
         <div className="fixed bottom-0 right-0 mb-4 mr-4 z-10">
-          <Link href={`https://wa.me/+8801234567890`} target="_blank">
+          <Link href={`https://wa.me/+447446272784`} target="_blank">
             <RiWhatsappFill className="text-5xl text-green-600 md:ml-2 ml-3" />
             <span className="text-white font-semibold">Whatsapp</span>
           </Link>

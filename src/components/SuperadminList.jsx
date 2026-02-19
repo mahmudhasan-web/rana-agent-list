@@ -22,7 +22,7 @@ const SuperadminList = () => {
       setLoading(true);
       try {
         const response = await api.get(
-          `/users/list/superadmins?page=${currentPage}&limit=${limit}`
+          `/users/list/superadmins?page=${currentPage}&limit=${limit}`,
         );
         setAdmins(response.data.result.superadmins);
         setTotalPages(response.data.result.totalPages);
@@ -63,7 +63,7 @@ const SuperadminList = () => {
   return (
     <div className="flex flex-col items-center">
       <h1 className="text-center text-yellow-400 lg:text-xl text-[14px] lg:font-bold font-semibold lg:mb-8 mb-2">
-        BetX365 ONLINE Super-Agent LIST
+        lcx247 ONLINE Super-Agent LIST
       </h1>
       <div className="min-h-screen bg-[#1a1b1f] text-white lg:p-4 p-2 rounded-md w-full">
         <div className="max-w-7xl mx-auto">

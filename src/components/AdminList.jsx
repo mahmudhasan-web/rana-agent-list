@@ -22,7 +22,7 @@ const AdminList = () => {
       setLoading(true);
       try {
         const response = await api.get(
-          `/users/list/admins?page=${currentPage}&limit=${limit}`
+          `/users/list/admins?page=${currentPage}&limit=${limit}`,
         );
         setAdmins(response.data.result.admins);
         setTotalPages(response.data.result.totalPages);
@@ -63,7 +63,7 @@ const AdminList = () => {
   return (
     <div className="flex flex-col items-center">
       <h1 className="text-center text-yellow-400 lg:text-xl text-[14px] lg:font-bold font-semibold lg:mb-8 mb-2">
-        BetX365 ONLINE ADMIN LIST
+        lcx247 ONLINE ADMIN LIST
       </h1>
       <div className="min-h-screen bg-[#1a1b1f] text-white lg:p-4 p-2 rounded-md w-full">
         <div className="max-w-7xl mx-auto">
@@ -74,20 +74,19 @@ const AdminList = () => {
             </p>
           ) : (
             <>
-              {
-              
-              admins.length <=0 ?
-              <p className="text-center grid grid-cols-1 gap-2 items-center bg-[#22242c] lg:p-3 p-1 rounded-lg mb-2">
-              No Admins Found
-            </p>
-              : 
-              admins?.map((admin) => (
-                <TableBody
-                  admin={admin}
-                  handleModal={handlemodal}
-                  handleReport={handleReport}
-                />
-              ))}
+              {admins.length <= 0 ? (
+                <p className="text-center grid grid-cols-1 gap-2 items-center bg-[#22242c] lg:p-3 p-1 rounded-lg mb-2">
+                  No Admins Found
+                </p>
+              ) : (
+                admins?.map((admin) => (
+                  <TableBody
+                    admin={admin}
+                    handleModal={handlemodal}
+                    handleReport={handleReport}
+                  />
+                ))
+              )}
             </>
           )}
           <ReportModal

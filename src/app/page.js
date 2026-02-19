@@ -18,6 +18,10 @@ export default function Home() {
     setReportModal(true);
     setSelectedUserId(id);
   };
+  const formatWhatsAppNumber = (number) => {
+  return number?.replace(/\D/g, "");
+};
+
 
   useEffect(() => {
     const fetchMaster = async () => {
@@ -101,7 +105,7 @@ export default function Home() {
                 </div>
                 <div className="flex flex-col gap-1 justify-center">
                   <Link
-                    href={`https://wa.me/${user?.whatsappNo}`}
+                    href={`https://wa.me/${formatWhatsAppNumber(user?.whatsappNo)}`}
                     className="bg-green-500 px-1 rounded-md text-xs lg:text-lg"
                   >
                     Message

@@ -23,7 +23,7 @@ const SubadminList = () => {
       setLoading(true);
       try {
         const response = await api.get(
-          `/users/list/subadmins?page=${currentPage}&limit=${limit}`
+          `/users/list/subadmins?page=${currentPage}&limit=${limit}`,
         );
         console.log(response);
         setAdmins(response.data.result.subadmins);
@@ -66,7 +66,7 @@ const SubadminList = () => {
   return (
     <div className="flex flex-col items-center">
       <h1 className="text-center text-yellow-400 lg:text-xl text-[14px] lg:font-bold font-semibold lg:mb-8 mb-2">
-        BetX365 ONLINE Sub-Agent LIST
+        lcx247 ONLINE Sub-Agent LIST
       </h1>
       <div className="min-h-screen bg-[#1a1b1f] text-white lg:p-4 p-2 rounded-md w-full">
         <div className="max-w-7xl mx-auto">
