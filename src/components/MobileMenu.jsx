@@ -9,7 +9,7 @@ import {
   LogInIcon,
 } from "lucide-react";
 import Image from "next/image";
-import Logo from "@/assets/logo-new.png";
+import Logo from "@/assets/logo.2f387ec31c0cc62a1664e3439eb23b2d.svg";
 import AgentSearchModal from "./SearchAgent";
 import { useState } from "react";
 import { useRouter } from "next/navigation";

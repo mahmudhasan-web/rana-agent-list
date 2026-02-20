@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
           }}
         /> */}
       <body
-        className={`${geistSans.variable} ${geistMono.variable} relative antialiased lg:mx-[74px] mx-3 bg-[#1F2029]`}
+        className={`${geistSans.variable} ${geistMono.variable} relative antialiased lg:mx-[74px] mx-1 bg-[#1F2029]`}
       >
         <div className="min-h-screen text-white mb-12">
           <SearchButton />
@@ -61,7 +61,7 @@ export default function RootLayout({ children }) {
             <Navigation />
             <Marquee className="lg:py-3 py-2 bg-gray-800 shadow-md rounded-lg text-yellow-400">
               <span>
-                এজেন্ট লিস্টের বাইরে লেনদেন করে ধরা খেলে batxwin.bet দায়ী নয়..
+                এজেন্ট লিস্টের বাইরে লেনদেন করে ধরা খেলে lcx247.live দায়ী নয়..
               </span>
             </Marquee>
           </div>

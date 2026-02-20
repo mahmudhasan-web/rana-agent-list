@@ -49,7 +49,7 @@ export default function Home() {
         <div className="flex gap-4">
           <Link
             href={
-              "https://www.facebook.com/groups/velkibdt"
+              "https://www.facebook.com/share/1AWpk4SgeG"
             }
             className="bg-blue-500 flex items-center p-1 rounded-lg"
           >
